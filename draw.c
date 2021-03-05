@@ -1,13 +1,13 @@
 #include "head.h" 
 void draw(char **card,int level){ 
 
- int cards,playersum=0,cpusum=0,sentaku,hand=4,hands=4;//‚·‚Å‚É‚S–‡”z‚Á‚Ä‚¢‚é‚©‚ç hand=4‚Æ‚µ‚Ä‚¢‚éB 
+ int cards,playersum=0,cpusum=0,sentaku,hand=4,hands=4;//ã™ã§ã«ï¼”æšé…ã£ã¦ã„ã‚‹ã‹ã‚‰ hand=4ã¨ã—ã¦ã„ã‚‹ã€‚ 
   
    
 	printf("\n");
 do{ 
   
- scanf("%d",&sentaku);//0‚©1‚ğ‘I‘ğ 
+ scanf("%d",&sentaku);//0ã‹1ã‚’é¸æŠ 
   
  if(sentaku==0){ return;} 
   
@@ -217,6 +217,6 @@ for( cards = 0; card[2][cards] != '\0'; cards++){
 
     hands = hands + 1; 
   } 
-} while(hand<52);//ƒJ[ƒh‚Í52–‡‚µ‚©‚È‚¢‚©‚ç Å‘å‚Å‚±‚±‚Ü‚Å  
+} while(hand<52);//ã‚«ãƒ¼ãƒ‰ã¯52æšã—ã‹ãªã„ã‹ã‚‰ æœ€å¤§ã§ã“ã“ã¾ã§  
 
 }

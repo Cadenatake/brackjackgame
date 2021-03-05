@@ -2,10 +2,10 @@
 int level(){
 	int setlevel = 0;
 	while(1){
-		printf("ƒŒƒxƒ‹‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢i1`3jF");
+		printf("ãƒ¬ãƒ™ãƒ«ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼ˆ1ï½3ï¼‰ï¼š");
 		scanf("%d", &setlevel);
 		if( 0 < setlevel && setlevel < 4)break;
-		printf("•s³‚È“ü—Í’l‚Å‚·");
+		printf("ä¸æ­£ãªå…¥åŠ›å€¤ã§ã™");
 	}
 return setlevel;
 }

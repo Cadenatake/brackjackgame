@@ -6,18 +6,18 @@ int continue1()
 {
    	int num,ans=0;
 	
-	printf("ƒQ[ƒ€‚ðŒp‘±‚µ‚Ü‚·‚©?\n");
-	printf("Œp‘±‚Í1I—¹‚Í0‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
+	printf("ã‚²ãƒ¼ãƒ ã‚’ç¶™ç¶šã—ã¾ã™ã‹?\n");
+	printf("ç¶™ç¶šã¯1çµ‚äº†ã¯0ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚\n");
 	do {
 		scanf("%d", &num);
 		if (num < 0 || num > 1) {
-			printf("Žw’è‚Ì”’l‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+			printf("æŒ‡å®šã®æ•°å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„\n");
 		}
 	} while (num < 0 || num > 1);
 	
 	
 	if(num==0){
-		printf("ƒQ[ƒ€‚ðI—¹‚µ‚Ü‚·B");
+		printf("ã‚²ãƒ¼ãƒ ã‚’çµ‚äº†ã—ã¾ã™ã€‚");
 		exit(0);
 	}
 	else{
