@@ -187,50 +187,50 @@ double judge(char card[3][52])
 			}
 	
 	
-	printf("©•ª‚ÌèD‡Œv‚Í%d‚Å‚·II\n",x);
-	printf("‘Šè‚ÌèD‡Œv‚Í%d‚Å‚·II\n",y);
+	printf("è‡ªåˆ†ã®æ‰‹æœ­åˆè¨ˆã¯%dã§ã™ï¼ï¼\n",x);
+	printf("ç›¸æ‰‹ã®æ‰‹æœ­åˆè¨ˆã¯%dã§ã™ï¼ï¼\n",y);
 	
 	
 	if(x < 22 && y < 22){
 		if( y < x ){
-			printf("ŸÒ‚Í©•ª‚Å‚·!\n");
+			printf("å‹è€…ã¯è‡ªåˆ†ã§ã™!\n");
 			dividend=1.0;
 			for(i=0;card[1][i] !='\0';i++){
 				count++;
 			}
 	if( card[1][0] == 'A' && card[1][1] == 'J' || card[1][0] == 'J' && card[1][1] == 'A'){
 		dividend += 1.5;
-		printf("ƒuƒ‰ƒbƒNƒWƒƒƒbƒN!\n");
+		printf("ãƒ–ãƒ©ãƒƒã‚¯ã‚¸ãƒ£ãƒƒã‚¯!\n");
 	}
 	if( x <= 21 && count==6 ){
 		dividend += 2.0;
-		printf("ƒVƒbƒNƒXƒAƒ“ƒ_[!\n");
+		printf("ã‚·ãƒƒã‚¯ã‚¹ã‚¢ãƒ³ãƒ€ãƒ¼!\n");
 	}
 	if(x <= 21 && count==7 ){
 		dividend += 2.5;
-		printf("ƒZƒuƒ“ƒAƒ“ƒ_[!\n");
+		printf("ã‚»ãƒ–ãƒ³ã‚¢ãƒ³ãƒ€ãƒ¼!\n");
 	}
 	if( card[1][0] == '7' && card[1][1] == '7' && card[1][2] == '7'){
 		dividend += 3.0;
-		printf("ƒXƒŠ[ƒZƒuƒ“!\n");
+		printf("ã‚¹ãƒªãƒ¼ã‚»ãƒ–ãƒ³!\n");
 	}
 	if(x <= 21 && count==11 ){
 		dividend += 99.0;
-		printf("ƒCƒŒƒuƒ“ƒJ[ƒh!\n");
+		printf("ã‚¤ãƒ¬ãƒ–ãƒ³ã‚«ãƒ¼ãƒ‰!\n");
 	}
 	
-	printf("”z“–‚Í%.1f”{‚É‚È‚è‚Ü‚·.\n",dividend);
+	printf("é…å½“ã¯%.1få€ã«ãªã‚Šã¾ã™.\n",dividend);
 		}else if(x < y ){
-			printf("ŸÒ‚Í‘Šè‚Å‚·!\n");
+			printf("å‹è€…ã¯ç›¸æ‰‹ã§ã™!\n");
 		}else{
-			printf("ˆø‚«•ª‚¯\n");
+			printf("å¼•ãåˆ†ã‘\n");
 		}
 	}else if(22 <= x){
-		printf("©•ª‚Íƒo[ƒXƒg!\n");
-		printf("‘Šè‚ÌŸ‚¿!\n");
+		printf("è‡ªåˆ†ã¯ãƒãƒ¼ã‚¹ãƒˆ!\n");
+		printf("ç›¸æ‰‹ã®å‹ã¡!\n");
 	}else {
-		printf("‘Šè‚Íƒo[ƒXƒg!\n");
-		printf("©•ª‚ÌŸ‚¿!\n");
+		printf("ç›¸æ‰‹ã¯ãƒãƒ¼ã‚¹ãƒˆ!\n");
+		printf("è‡ªåˆ†ã®å‹ã¡!\n");
 		dividend=1.0;
 	}
 

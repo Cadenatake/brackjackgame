@@ -13,20 +13,20 @@ void play( char card[][52], int *chip, int setlevel)
 	
 	shuffle( card2);
 	while(1){
-		printf("ƒxƒbƒg‚·‚éƒRƒCƒ“‚Ì–‡”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n10~Š–‡”:");
+		printf("ãƒ™ãƒƒãƒˆã™ã‚‹ã‚³ã‚¤ãƒ³ã®æšæ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„\n10~æ‰€æŒæšæ•°:");
 		scanf("%d", &bet);
 		if( *chip >= bet && bet >= 10)break;
 	}
-	printf("\n\nƒfƒoƒbƒNƒƒbƒZ[ƒW‚±‚±‚©‚ç\n%s",card2[0]);//ƒfƒoƒbƒN—p
-	printf("\ncard[0][3]‚Ì’l:%c",card2[0][3]);//ƒfƒoƒbƒN—p
+	printf("\n\nãƒ‡ãƒãƒƒã‚¯ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã“ã“ã‹ã‚‰\n%s",card2[0]);//ãƒ‡ãƒãƒƒã‚¯ç”¨
+	printf("\ncard[0][3]ã®å€¤:%c",card2[0][3]);//ãƒ‡ãƒãƒƒã‚¯ç”¨
 	
 	deal( card2);
-	printf("\ncard[1][1]‚Ì’l:%c",card2[1][1]);//ƒfƒoƒbƒN—p
-	printf("\ncard[2][1]‚Ì’l:%c",card2[2][1]);//ƒfƒoƒbƒN—p
+	printf("\ncard[1][1]ã®å€¤:%c",card2[1][1]);//ãƒ‡ãƒãƒƒã‚¯ç”¨
+	printf("\ncard[2][1]ã®å€¤:%c",card2[2][1]);//ãƒ‡ãƒãƒƒã‚¯ç”¨
 
 	draw( card2, setlevel);
-	printf("\ncard[1]‚ÌƒJ[ƒh:%s",card2[1]);//ƒfƒoƒbƒN—p
-	printf("\ncard[2]‚ÌƒJ[ƒh:%s\n‚±‚±‚Ü‚Å\n\n",card2[2]);//ƒfƒoƒbƒN—p
+	printf("\ncard[1]ã®ã‚«ãƒ¼ãƒ‰:%s",card2[1]);//ãƒ‡ãƒãƒƒã‚¯ç”¨
+	printf("\ncard[2]ã®ã‚«ãƒ¼ãƒ‰:%s\nã“ã“ã¾ã§\n\n",card2[2]);//ãƒ‡ãƒãƒƒã‚¯ç”¨
 	
 	dividend = judge( card);
 	
